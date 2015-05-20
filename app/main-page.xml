@@ -1,0 +1,79 @@
+<Page xmlns="http://www.nativescript.org/tns.xsd"
+      xmlns:cc="components/calccomponents"
+      loaded="pageLoaded" unloaded="pageUnloaded">
+
+    <DockLayout stretchLastChild="true">
+        <StackLayout dock="top" cssClass="label-back">
+            <cc:ScalingLabel text="{{ mainLabelText }}" cssClass="display" />
+        </StackLayout>
+
+        <GridLayout rows="*, *, *, *, *" columns="*, *, *, *" dock="bottom">
+            <Border row="0" col="0" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="{{ clearText }}" cssClass="btn-meta" tap="{{ btnTapAC }}" />
+            </Border>
+            <Border row="0" col="1" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="{{ pmSymbolText }}" cssClass="btn-meta" tap="{{ btnTapPM }}" />
+            </Border>
+            <Border row="0" col="2" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="%" cssClass="btn-meta" tap="{{ btnTapPercent }}" />
+            </Border>
+
+            <Border row="1" col="0" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="7" cssClass="btn-number" tap="{{ btnTap7 }}" />
+            </Border>
+            <Border row="1" col="1" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="8" cssClass="btn-number" tap="{{ btnTap8 }}" />
+            </Border>
+            <Border row="1" col="2" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="9" cssClass="btn-number" tap="{{ btnTap9 }}" />
+            </Border>
+
+            <Border row="2" col="0" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="4" cssClass="btn-number" tap="{{ btnTap4 }}" />
+            </Border>
+            <Border row="2" col="1" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="5" cssClass="btn-number" tap="{{ btnTap5 }}" />
+            </Border>
+            <Border row="2" col="2" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="6" cssClass="btn-number" tap="{{ btnTap6 }}" />
+            </Border>
+
+
+            <Border row="3" col="0" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="1" cssClass="btn-number" tap="{{ btnTap1 }}" />
+            </Border>
+            <Border row="3" col="1" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="2" cssClass="btn-number" tap="{{ btnTap2 }}" />
+            </Border>
+            <Border row="3" col="2" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="3" cssClass="btn-number" tap="{{ btnTap3 }}" />
+            </Border>
+
+            <Border row="4" colSpan="2" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="0" cssClass="btn-number" tap="{{ btnTap0 }}" />
+            </Border>
+            <Border row="4" col="2" borderWidth="0.4" borderColor="#333333">
+                <cc:FontButton text="." cssClass="btn-number" tap="{{ btnTapDot }}" />
+            </Border>
+
+            <GridLayout rowSpan="5" col="3" rows="*, *, *, *, *" columns="*" loaded="actionsGridLoaded">
+                <Border row="0" col="0" borderWidth="{{ opBorderDiv }}" borderColor="#333333">
+                    <cc:FontButton text="{{ divSymbolText }}" cssClass="btn-action" tap="{{ btnTapDiv }}" />
+                </Border>
+                <Border row="1" col="0" borderWidth="{{ opBorderMult}}" borderColor="#333333">
+                    <cc:FontButton text="{{ multSymbolText }}" cssClass="btn-action" tap="{{ btnTapMult }}" />
+                </Border>
+                <Border row="2" col="0" borderWidth="{{ opBorderSub }}" borderColor="#333333">
+                    <cc:FontButton text="{{ minusSymbolText }}" cssClass="btn-action" tap="{{ btnTapSub }}" />
+                </Border>
+                <Border row="3" col="0" borderWidth="{{ opBorderAdd }}" borderColor="#333333">
+                    <cc:FontButton text="{{ plusSymbolText }}" cssClass="btn-action" tap="{{ btnTapAdd }}" />
+                </Border>
+                <Border row="4" col="0" borderWidth="0.4" borderColor="#333333">
+                    <cc:FontButton text="{{ eqSymbolText }}" cssClass="btn-action" tap="{{ btnTapEq }}" />
+                </Border>
+            </GridLayout>
+
+        </GridLayout>
+    </DockLayout>
+</Page>

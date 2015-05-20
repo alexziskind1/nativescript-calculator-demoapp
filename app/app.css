@@ -1,0 +1,31 @@
+page {
+    background-color: #000000;
+}
+
+.label-back {
+    background-color: #000000;
+    padding-top: 5;
+}
+
+.display {
+    color: white;
+    font-size: 70;
+    text-align: right;
+}
+
+.btn-meta {
+    background-color: #c2c4c5;
+    color: black;
+    font-size: 30;
+}
+
+.btn-action {
+    color: white;
+    font-size: 30;
+}
+
+.btn-number {
+    background-color: #d2d3d5;
+    color: black;
+    font-size: 30;
+}
