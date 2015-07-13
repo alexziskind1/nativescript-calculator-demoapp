@@ -14,16 +14,11 @@ var bindable = require("ui/core/bindable");
 var types = require("utils/types");
 var numberUtils = require("utils/number-utils");
 var GridUnitType;
-
-
 (function (GridUnitType) {
     GridUnitType.auto = "auto";
     GridUnitType.pixel = "pixel";
     GridUnitType.star = "star";
 })(GridUnitType = exports.GridUnitType || (exports.GridUnitType = {}));
-
-
-
 var ItemSpec = (function (_super) {
     __extends(ItemSpec, _super);
     function ItemSpec() {
@@ -101,9 +96,6 @@ var ItemSpec = (function (_super) {
     return ItemSpec;
 })(bindable.Bindable);
 exports.ItemSpec = ItemSpec;
-
-
-
 var GridLayout = (function (_super) {
     __extends(GridLayout, _super);
     function GridLayout() {
